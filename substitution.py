@@ -1,5 +1,4 @@
 from sympy import*
-import random
 from basics import *
 
 def substitution(inp):
@@ -12,7 +11,7 @@ def substitution(inp):
             while (not key.isalpha()) or (len(key) != 26) or (len(set(key)) != 26):
                 key = input('Substution cipher key: ').lower()
             return key
-        # print something about how the first of the key is a, second is b, and so on
+        print("Input dictionary: ")
         key = get_key ()
 
         # encrypt 

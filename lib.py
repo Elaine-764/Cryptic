@@ -1,6 +1,4 @@
 from sympy import*
-#from crypto.PublicKey import RSA
-import random
 from basics import *
 from caesar import caesar
 from substitution import substitution
