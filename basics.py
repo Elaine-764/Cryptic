@@ -4,6 +4,7 @@ def get_message():
     while not message.isalpha():
         message = input("Message: ").replace(" ", "")
     return message
+# removes spaces but preserves upper/lower case
 
 def split_5(message):
     message = message.replace(' ', '')
@@ -49,7 +50,7 @@ shift = 50
 def convert_to_ascii(message):
     new = ""
     for letter in message:
-        new+= str(ord(letter)-shift)
+        new += str(ord(letter) - shift)
     return int(new)
 
 def convert_from_ascii(num):
